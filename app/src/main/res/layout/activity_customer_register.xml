@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerRegisterActivity">
+
+    <EditText
+        android:id="@+id/edtTxtFirstName"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Enter First Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTxtLastName"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Last Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtFirstName" />
+
+
+    <EditText
+        android:id="@+id/edtTxtEmail"
+
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter email address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtLastName" />
+
+    <EditText
+        android:id="@+id/edtTxtPassword"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Enter password"
+        android:inputType="numberPassword"
+        android:rotationX="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtEmail" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="314dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="serif"
+        android:text="Register"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
